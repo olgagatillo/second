@@ -11,7 +11,6 @@ nav{
     line-height: 2em;
     font-style: normal;
     color:black;
-    float:left;
     font-size: 130%;
     font-weight: bold;
     margin-top:5px;
@@ -49,10 +48,38 @@ background-color: #6dd8f1 !important;
 color: black !important;
 }
 
-	.container {
+.product-card {
+  background-color: #f8f9fa;
+  border: 2px solid #007bff; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 15px; 
+  transition: transform 0.2s;
+  display:flex;
+  flex-direction: column;
+
+}
+
+.product-card:hover {
+  transform: scale(1.05); 
+}
+
+.product-thumb {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 50px auto;
+  align-items: center;
+  justify-content: center;
+  height: 200px; 
+}
+
+.product-thumb img {
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: contain; 
+}
+
+
+.product-bottom-details {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
 }
