@@ -9,35 +9,35 @@
     },
     {
       "id": "2",
-      "title": "Товар 2",
+      "title": "Худи Лана",
       "vendor_code": "222",
       "description": "Описание 2",
-      "price": 200,
-      "img": "../../images/uso_002.jpg"
+      "price": 1600,
+      "img": "https://basket-10.wbbasket.ru/vol1430/part143055/143055217/images/tm/1.webp"
     },
     {
       "id": "3",
-      "title": "Товар 3",
+      "title": "Леггинсы",
       "vendor_code": "333",
       "description": "Описание 3",
-      "price": 300,
-      "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/uso_003.jpg"
+      "price": 1800,
+      "img": "https://basket-10.wbbasket.ru/vol1483/part148344/148344494/images/tm/1.webp"
     },
     {
       "id": "4",
-      "title": "Товар 4",
+      "title": "Сумка",
       "vendor_code": "444e",
       "description": "Описание 4",
-      "price": 400,
-      "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/uso_004.jpg"
+      "price": 2900,
+      "img": "https://basket-14.wbbasket.ru/vol2088/part208885/208885685/images/tm/1.webp"
     },
     {
       "id": "5",
-      "title": "Товар 5",
+      "title": "Футболка",
       "vendor_code": "4445e",
       "description": "Описание 6",
-      "price": 400,
-      "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/uso_005.jpg"
+      "price": 1700,
+      "img": "https://basket-10.wbbasket.ru/vol1557/part155788/155788372/images/tm/1.webp"
     },
     {
       "id": "6",
