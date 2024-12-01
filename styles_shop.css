@@ -1,0 +1,50 @@
+*{
+margin: 0 px;
+padding: 0px;
+}
+
+nav{
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    background-repeat: repeat-x;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 2em;
+    font-style: normal;
+    color:black;
+    float:left;
+    font-size: 130%;
+    font-weight: bold;
+    margin-top:5px;
+    margin-left: 7px;
+    margin-right:1px;
+    border-color:#ac6504;
+  }
+
+  nav ul{
+    list-style-type: none;
+    text-align: center;
+    text-indent: 10px;
+  }
+
+  nav li{
+    margin-left: 30px;
+    margin-right:38px;
+    margin-bottom: 8px;
+    display:inline;
+  }
+
+  nav li a{
+    text-decoration:none;
+    color: black;
+  }
+
+  nav li a:hover{
+    color: #ac6504;
+  }
+
+  .nav-pills > li > a.active {
+background-color: #6dd8f1 !important;
+}
+  .nav-pills > li > a{
+color: black !important;
+}

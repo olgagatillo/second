@@ -1,0 +1,221 @@
+*{
+margin:0px;
+padding:0px;
+}
+
+
+@font-face{
+font-family:'Helvetica';
+src: local('Helvetica.zip')
+}
+
+
+
+
+nav{
+        background-color: white;
+        border-radius: 10px 10px 10px 10px;
+        background-color: 0.1;
+        background-repeat: repeat-x;
+        font-family: 'Helvetica', sans-serif;
+        line-height: 2em;
+        font-style: normal;
+        color:black;
+        font-size: 130%;
+        font-weight: bold;
+        margin-top:5px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      nav ul{
+        list-style-type: none;
+        text-align: center;
+        text-indent: 10px;
+      }
+
+      nav li{
+        margin-left: 20px;
+        margin-right:20px;
+        margin-bottom: 8px;
+        display:inline;
+      }
+
+      nav li a{
+        text-decoration:none;
+        color: black;
+      }
+
+      nav li a:hover{
+        color: #ac6504;
+      }
+
+      .nav-pills > li > a.active {
+        background-color: #6dd8f1 !important;
+      }
+      .nav-pills > li > a{
+        color: black !important;
+      }
+
+.container{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+
+
+#title{
+font-family:'Helvetica';
+border: medium outset #80CDFF;
+margin-top: 10px;
+padding:30px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+font-size: 27px;
+letter-spacing: 0.05em;
+margin-left: 50px;
+text-align: center;
+}
+
+.row {
+  display: flex; /* Enables flexbox layout */
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  align-items: center; /* Vertically centers items */
+}
+
+#foto {
+  flex: 1 1 auto; /* Allows the photo div to grow and shrink */
+  margin-right: 20px; /* Adds space between image and title */
+}
+
+#title {
+  flex: 1 1 auto; /* Allows the title div to grow and shrink */
+  text-align: center; /* Center text inside the title div */
+  font-family: 'Helvetica';
+  border: medium outset #80CDFF;
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 20px; /* Combined border radius properties */
+  font-size: 2rem; /* Use rem for responsive font size */
+  letter-spacing: 0.05em;
+}
+
+
+@media (max-width: 600px) {
+  .row {
+      flex-direction: column; /* Stacks items vertically on small screens */
+      align-items: center; /* Centers items horizontally */
+  }
+
+  #foto {
+      margin-right: 0; /* Remove right margin when stacked */
+      margin-bottom: 10px;
+      width:100%; /* Add space between image and title when stacked */
+  }
+
+  #title {
+      width: 50%; /* Makes title take full width */
+      padding: 20px; /* Adjust padding for smaller screens */
+      font-size: 1.5rem;
+      align-items:flex-start;
+      justify-content: flex-start;
+  }
+}
+.desc{
+  margin-top:20px;
+}
+.description {
+  border: 2px solid #80CDFF; /* Set border width, style, and color */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px; /* Add padding inside the border */
+  margin-top: 20px;
+  margin-right:50px; /* Add margin outside the border */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  background-color: #f9f9f9; /* Optional: sets a background color */
+}
+
+
+  .teams{
+    margin-left:60px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column; /* Ensure it behaves as a flex container */
+    justify-content: center; /* Center items horizontally if needed */
+    align-items: center;
+  }
+
+
+.teams{
+  display:flex;
+  flex-direction: row;
+  margin-top: 60px;
+  margin-left: 120px;
+  font-family:'Helvetica', sans-serif;
+  font-weight:bold;
+  font-size: 15px;
+}
+
+#txt{
+  font-weight:normal;
+}
+
+  #teams ul{
+    list-style-type: none;
+    margin-bottom:20px;
+    }
+
+    #teams li{
+      margin-bottom:12px;
+      margin-top:10px;
+      }
+    #teams a{
+      text-decoration:none;
+      color:#ac6504;
+}
+
+    #teams a:hover{
+            color:black;
+    }
+
+
+
+
+
+
+/* #title{
+font-family:'Helvetica';
+border: medium outset #80CDFF;
+padding:50px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+margin-right:200px;
+margin-left:550px;
+padding-top:30px;
+padding-bottom: 40px;
+font-size: 27px;
+letter-spacing: 0.05em;
+
+.cont{
+    margin-left:60px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+  .cont{
+  font-family:'Helvetica';
+  letter-spacing: 0.05em;
+  margin-left:100px;
+  margin-right:100px;
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+}
+*/
