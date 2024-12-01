@@ -48,3 +48,11 @@ background-color: #6dd8f1 !important;
   .nav-pills > li > a{
 color: black !important;
 }
+
+	.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 50px auto;
+}
