@@ -61,23 +61,22 @@ nav{
   display:flex;
   justify-content:flex-start;
   align-items:center;
+  width:auto;
 }
 
 
 
 #title{
 font-family:'Helvetica';
-border: medium outset #80CDFF;
 margin-top: 10px;
-padding:30px;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-border-bottom-right-radius: 20px;
-border-bottom-left-radius: 20px;
-font-size: 27px;
+padding:5px;
+font-size: 25px;
 letter-spacing: 0.05em;
 margin-left: 50px;
 text-align: center;
+flex: 1 1 auto; /* Allows the title div to grow and shrink */
+text-align: center; /* Center text inside the title div */
+
 }
 
 .row {
@@ -88,20 +87,11 @@ text-align: center;
 
 #foto {
   flex: 1 1 auto; /* Allows the photo div to grow and shrink */
-  margin-right: 20px; /* Adds space between image and title */
+  margin-right: 20px;
+  width:auto; /* Adds space between image and title */
 }
 
-#title {
-  flex: 1 1 auto; /* Allows the title div to grow and shrink */
-  text-align: center; /* Center text inside the title div */
-  font-family: 'Helvetica';
-  border: medium outset #80CDFF;
-  margin-top: 10px;
-  padding: 30px;
-  border-radius: 20px; /* Combined border radius properties */
-  font-size: 2rem; /* Use rem for responsive font size */
-  letter-spacing: 0.05em;
-}
+
 
 
 @media (max-width: 600px) {
@@ -113,13 +103,12 @@ text-align: center;
   #foto {
       margin-right: 0; /* Remove right margin when stacked */
       margin-bottom: 10px;
-      width:100%; /* Add space between image and title when stacked */
+      width:auto; /* Add space between image and title when stacked */
   }
 
-  #title {
-      width: 50%; /* Makes title take full width */
-      padding: 20px; /* Adjust padding for smaller screens */
-      font-size: 1.5rem;
+  #title { /* Makes title take full width */
+      padding: 10px; /* Adjust padding for smaller screens */
+      font-size: 18px;
       align-items:flex-start;
       justify-content: flex-start;
   }
@@ -128,94 +117,59 @@ text-align: center;
   margin-top:20px;
 }
 .description {
-  border: 2px solid #80CDFF; /* Set border width, style, and color */
+  border: 2px solid #80CDFF; 
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 0px; /* Add padding inside the border */
+  padding-left: 0px;
   margin-top: 20px;
-  margin-right:50px; /* Add margin outside the border */
-  border-radius: 10px; /* Optional: adds rounded corners */
-  background-color: #f9f9f9; /* Optional: sets a background color */
+  margin-right:50px; 
+  border-radius: 10px; 
+  background-color: #f9f9f9; 
 }
 
-
-  .teams{
-    margin-left:60px;
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction: column; /* Ensure it behaves as a flex container */
-    justify-content: center; /* Center items horizontally if needed */
-    align-items: center;
-  }
-
-
-.teams{
-  display:flex;
-  flex-direction: row;
-  margin-top: 60px;
-  margin-left: 120px;
-  font-family:'Helvetica', sans-serif;
-  font-weight:bold;
-  font-size: 15px;
+.card-body {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  height: 100%; 
 }
 
-#txt{
-  font-weight:normal;
-}
-
-  #teams ul{
-    list-style-type: none;
-    margin-bottom:20px;
-    }
-
-    #teams li{
-      margin-bottom:12px;
-      margin-top:10px;
-      }
-    #teams a{
-      text-decoration:none;
-      color:#ac6504;
-}
-
-    #teams a:hover{
-            color:black;
-    }
-
-
-
-
-
-
-/* #title{
-font-family:'Helvetica';
-border: medium outset #80CDFF;
-padding:50px;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-border-bottom-right-radius: 20px;
-border-bottom-left-radius: 20px;
-margin-right:200px;
-margin-left:550px;
-padding-top:30px;
-padding-bottom: 40px;
-font-size: 27px;
-letter-spacing: 0.05em;
-
-.cont{
-    margin-left:60px;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media (max-width: 768px) {
+  .card-body {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center;
   }
 }
-  .cont{
-  font-family:'Helvetica';
-  letter-spacing: 0.05em;
-  margin-left:100px;
-  margin-right:100px;
-  display:flex;
-  justify-content:flex-start;
-  align-items:flex-start;
+
+.product-card {
+  display: flex;
+  width: 250px; /* Width of the container */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  border: 2px solid #ccc; /* Optional: add a border for visual separation */
+  border-radius: 8px; /* Optional: add rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Center items horizontally */
 }
-*/
+
+.product-card ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.product-card li {
+  margin-bottom: 8px; 
+}
+
+.product-card li a {
+  text-decoration: none; 
+  color: black; 
+}
+
+.product-card li a:hover {
+  color: #ac6504; 
+}
