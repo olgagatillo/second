@@ -173,3 +173,8 @@ text-align: center; /* Center text inside the title div */
 .product-card li a:hover {
   color: #ac6504; 
 }
+
+#team{
+  margin-left:110px;
+  margin-top:20px;
+}
