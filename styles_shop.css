@@ -83,3 +83,8 @@ color: black !important;
   justify-content: space-between; 
   align-items: center; 
 }
+
+#team{
+  margin-top:20px;
+  margin-left:110px;
+}
