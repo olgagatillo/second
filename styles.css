@@ -74,21 +74,21 @@ font-size: 25px;
 letter-spacing: 0.05em;
 margin-left: 50px;
 text-align: center;
-flex: 1 1 auto; /* Allows the title div to grow and shrink */
-text-align: center; /* Center text inside the title div */
+flex: 1 1 auto; 
+text-align: center; 
 
 }
 
 .row {
-  display: flex; /* Enables flexbox layout */
-  flex-wrap: wrap; /* Allows items to wrap onto the next line */
-  align-items: center; /* Vertically centers items */
+  display: flex; 
+  flex-wrap: wrap; 
+  align-items: center;
 }
 
 #foto {
-  flex: 1 1 auto; /* Allows the photo div to grow and shrink */
+  flex: 1 1 auto; 
   margin-right: 20px;
-  width:auto; /* Adds space between image and title */
+  width:auto; 
 }
 
 
@@ -96,18 +96,18 @@ text-align: center; /* Center text inside the title div */
 
 @media (max-width: 600px) {
   .row {
-      flex-direction: column; /* Stacks items vertically on small screens */
-      align-items: center; /* Centers items horizontally */
+      flex-direction: column; 
+      align-items: center; 
   }
 
   #foto {
-      margin-right: 0; /* Remove right margin when stacked */
+      margin-right: 0; 
       margin-bottom: 10px;
-      width:auto; /* Add space between image and title when stacked */
+      width:auto; 
   }
 
-  #title { /* Makes title take full width */
-      padding: 10px; /* Adjust padding for smaller screens */
+  #title { 
+      padding: 10px; 
       font-size: 18px;
       align-items:flex-start;
       justify-content: flex-start;
@@ -144,12 +144,12 @@ text-align: center; /* Center text inside the title div */
 
 .product-card {
   display: flex;
-  width: 250px; /* Width of the container */
-  flex-direction: column; /* Stack items vertically */
+  width: 250px; 
+  flex-direction: column; 
   align-items: center;
-  border: 2px solid #ccc; /* Optional: add a border for visual separation */
-  border-radius: 8px; /* Optional: add rounded corners */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Center items horizontally */
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 
 .product-card ul {
